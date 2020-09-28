@@ -1,0 +1,30 @@
+# 使用yaml格式来配置项目更简洁
+spring:
+  profiles:
+    active: dev
+  application:
+    name: codedemo
+    db-type: h2
+
+code-dome:
+  domain: www.codedemo.club
+  organization: mengyunzhi
+  create-year: 2020
+
+---
+# 使用---定义新的情景模式 mengyunzhi
+spring:
+  profiles: mengyunzhi
+
+code-dome:
+  domain: www.yunzhi.club
+  organization: mengyunzhi
+
+---
+# 使用---定义新的情景模式 hebut
+spring:
+  profiles: hebut
+
+code-dome:
+  domain: www.hebut.edu.cn
+  organization: hebut
